@@ -1,0 +1,41 @@
+/*
+  reusable
+*/
+
+body {
+  color: var(--bodycopy);
+}
+
+/*
+  sidenav
+*/
+
+.nojs-sidenav {
+  background-color: var(--secondary);
+  border-right: 0.4rem solid var(--bodycopy);
+}
+
+.nojs-sidenav[nojs-side=top] {
+  border-bottom: 0.4rem solid var(--bodycopy);
+}
+
+.nojs-sidenav[nojs-side=right] {
+  border-left: 0.4rem solid var(--bodycopy);
+}
+
+.nojs-sidenav[nojs-side=bottom] {
+  border-top: 0.4rem solid var(--bodycopy);
+}
+
+/*
+  pages
+*/
+
+/*
+  modal
+*/
+
+.nojs-modal {
+  background-color: white;
+  border: 0.2rem solid var(--bodycopy);
+}

@@ -1,0 +1,14 @@
+:root {
+  --primary: lightblue;
+  --secondary: lightyellow;
+  --tertiary: lightgreen;
+  --bodycopy: dimgray;
+
+  --header-height: 6rem;
+
+  --sidenav-height: 5rem;
+  --sidenav-width: 20rem;
+
+  --modal-height: 60vh;
+  --modal-width: 60vw;
+}

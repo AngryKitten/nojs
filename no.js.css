@@ -1,0 +1,24 @@
+@import "partials/variables.css";
+@import "partials/routing.css";
+@import "partials/sidenav.css";
+@import "partials/modal.css";
+@import "partials/tabs.css";
+@import "partials/testing.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+[class*=nojs-][class*=-selector] {
+  display: none;
+}
+
+[class*=nojs-][class*=-trigger] {
+  cursor: pointer;
+}

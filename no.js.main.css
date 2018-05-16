@@ -1,0 +1,61 @@
+#main-sidenav {
+  top: var(--header-height);
+}
+
+#header {
+  align-items: center;
+  background-color: var(--primary);
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  position: relative;
+  z-index: 3;
+}
+
+#hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 2.4rem;
+  justify-content: space-around;
+  transition: 0.5s;
+  width: 2.4rem;
+}
+
+#main-sidenav:checked ~ #header #hamburger {
+  transform: rotate(90deg);
+}
+
+.hamburger-bar {
+  background-color: var(--bodycopy);
+  height: 0.2rem;
+  width: 100%;
+}
+
+#title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+#information {
+  border: 4px solid var(--bodycopy);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 2.4rem;
+  justify-content: center;
+  width: 2.4rem;
+}
+pre {
+  background-color: var(--tertiary);
+  margin: 0;
+  padding-right: 8rem;
+}
+
+code {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}

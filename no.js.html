@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>no.js.css</title>
+  <link rel="stylesheet" href="sgrid.css">
+  <link rel="stylesheet" href="no.js.css">
+  <link rel="stylesheet" href="no.js.theme.css">
+  <link rel="stylesheet" href="no.js.main.css">
+</head>
+
+<body>
+  <div>
+    <input type="checkbox" id="main-sidenav" class="nojs-sidenav-selector">
+    <label class="nojs-sidenav-ninja" for="main-sidenav"></label>
+    <div id="main-sidenav" class="nojs-sidenav" nojs-side="left">
+      <label class="nojs-routing-trigger" for="home-page">Home</label>
+      <label class="nojs-routing-trigger" for="sidenav-page">Sidenav</label>
+      <label class="nojs-routing-trigger" for="modal-page">Modal</label>
+      <label class="nojs-routing-trigger" for="tabs-page">Tabs</label>
+      <label class="nojs-routing-trigger" for="accordions-page">Accordions</label>
+      <label class="nojs-routing-trigger" for="testing-page">Testing</label>
+    </div>
+    <div id="header">
+      <label for="main-sidenav">
+        <div id="hamburger">
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+        </div>
+      </label>
+      <span id="title">No JS</span>
+      <label class="nojs-modal-trigger" for="information-modal">
+        <div id="information">i</div>
+      </label>
+    </div>
+    <div class="nojs-modal-container">
+      <input type="checkbox" id="information-modal" class="nojs-modal-selector">
+      <label class="nojs-modal-ninja" for="information-modal"></label>
+      <div class="nojs-modal" nojs-side="top">
+        No JS information
+      </div>
+    </div>
+  </div>
+  <!-- 
+    home page
+  -->
+  <input type="radio" name="nojs-page" id="home-page" class="nojs-page-selector" checked>
+  <div class="nojs-page">
+    <div class="grid">
+      <div class="col-5 content-center">
+        Home page ;)
+      </div>
+    </div>
+  </div>
+  <!--
+    sidenav page
+  -->
+  <input type="radio" name="nojs-page" id="sidenav-page" class="nojs-page-selector">
+  <div class="nojs-page">
+    <div class="grid">
+      <!-- top sidenav -->
+      <div class="col-5 content-center">
+        <label class="nojs-sidenav-trigger" for="top-sidenav">Top Sidenav</label>
+        <div class="nojs-sidenav-container">
+          <input type="checkbox" id="top-sidenav" class="nojs-sidenav-selector">
+          <label class="nojs-sidenav-ninja" for="top-sidenav"></label>
+          <div class="nojs-sidenav" nojs-side="top"></div>
+        </div>
+      </div>
+      <!-- right sidenav -->
+      <div class="col-5 content-center">
+        <label class="nojs-sidenav-trigger" for="right-sidenav">Right Sidenav</label>
+        <div class="nojs-sidenav-container">
+          <input type="checkbox" id="right-sidenav" class="nojs-sidenav-selector">
+          <label class="nojs-sidenav-ninja" for="right-sidenav"></label>
+          <div class="nojs-sidenav" nojs-side="right"></div>
+        </div>
+      </div>
+      <!-- bottom sidenav -->
+      <div class="col-5 content-center">
+        <label class="nojs-sidenav-trigger" for="bottom-sidenav">Bottom Sidenav</label>
+        <div class="nojs-sidenav-container">
+          <input type="checkbox" id="bottom-sidenav" class="nojs-sidenav-selector">
+          <label class="nojs-sidenav-ninja" for="bottom-sidenav"></label>
+          <div class="nojs-sidenav" nojs-side="bottom"></div>
+        </div>
+      </div>
+      <!-- left sidenav -->
+      <div class="col-5 content-center">
+        <label class="nojs-sidenav-trigger" for="left-sidenav">Left Sidenav</label>
+        <div class="nojs-sidenav-container">
+          <input type="checkbox" id="left-sidenav" class="nojs-sidenav-selector">
+          <label class="nojs-sidenav-ninja" for="left-sidenav"></label>
+          <div class="nojs-sidenav" nojs-side="left"></div>
+        </div>
+      </div>
+      <div class="col-5 content-center">
+        <pre><code>
+          &lt;label class="nojs-sidenav-trigger" for="example-sidenav">Sidenav Label&lt;/label>
+          &lt;div class="nojs-sidenav-container">
+            &lt;input type="checkbox" id="example-sidenav" class="nojs-sidenav-selector">
+            &lt;label class="nojs-sidenav-ninja" for="example-sidenav">&lt;/label>
+            &lt;div class="nojs-sidenav" nojs-side="left, right, etc. left by default">&lt;/div>
+          &lt;/div>
+        </code></pre>
+      </div>
+    </div>
+  </div>
+  <!--
+    modals page
+  -->
+  <input type="radio" name="nojs-page" id="modal-page" class="nojs-page-selector">
+  <div class="nojs-page">
+    <div class="grid">
+      <!-- top modal ref -->
+      <div class="col-5 content-center">
+        <label class="nojs-modal-trigger" for="top-modal">Top Modal Direction</label>
+      </div>
+      <!-- right modal ref -->
+      <div class="col-5 content-center">
+        <label class="nojs-modal-trigger" for="right-modal">Right Modal Direction</label>
+      </div>
+      <!-- bottom modal ref -->
+      <div class="col-5 content-center">
+        <label class="nojs-modal-trigger" for="bottom-modal">Bottom Modal Direction</label>
+      </div>
+      <!-- left modal ref -->
+      <div class="col-5 content-center">
+        <label class="nojs-modal-trigger" for="left-modal">Left Modal Direction</label>
+      </div>
+    </div>
+  </div>
+  <!--
+    tabs page
+  -->
+  <input type="radio" name="nojs-page" id="tabs-page" class="nojs-page-selector">
+  <div class="nojs-page">
+    <div class="grid">
+      <div class="col-5 content-center">
+        <div class="nojs-tab-set">
+          <input type="radio" name="nojs-tabs" id="tab-1" class="nojs-tab-selector" checked>
+          <label class="nojs-tab-trigger" for="tab-1">hep</label>
+          <div class="nojs-tab">Tab 1</div>
+          <input type="radio" name="nojs-tabs" id="tab-2" class="nojs-tab-selector">
+          <label class="nojs-tab-trigger" for="tab-2">naw</label>
+          <div class="nojs-tab">Tab 2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    accordions page
+  -->
+  <input type="radio" name="nojs-page" id="accordions-page" class="nojs-page-selector">
+  <div class="nojs-page">
+    <div class="grid">
+      <div class="col-5 content-center">
+        <div class="nojs-accordion-set">
+          <input type="radio" name="nojs-accordions" id="accordion-1" class="nojs-accordion-selector" checked>
+          <label class="nojs-accordion-trigger" for="accordion-1">hep</label>
+          <div class="nojs-accordion">Accordion 1</div>
+          <input type="radio" name="nojs-accordions" id="accordion-2" class="nojs-accordion-selector">
+          <label class="nojs-accordion-trigger" for="accordion-2">naw</label>
+          <div class="nojs-accordion">Accordion 2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    testing page
+  -->
+  <input type="radio" name="nojs-page" id="testing-page" class="nojs-page-selector">
+  <div class="nojs-page">
+    <div class="grid">
+      <div class="col-full content-center">
+        <input type="radio" name="nojs-carousel" id="carousel-1-right" class="nojs-carousel-selector" checked>
+        <input type="radio" name="nojs-carousel" id="carousel-1-left" class="nojs-carousel-selector">
+        <div class="nojs-carousel-container">
+          <label class="nojs-carousel-trigger" for="carousel-3-left">Z</label>
+          <div>IMG1</div>
+          <label class="nojs-carousel-trigger" for="carousel-2-right">></label>
+        </div>
+        <input type="radio" name="nojs-carousel" id="carousel-2-right" class="nojs-carousel-selector">
+        <input type="radio" name="nojs-carousel" id="carousel-2-left" class="nojs-carousel-selector">
+        <div class="nojs-carousel-container">
+          <label class="nojs-carousel-trigger" for="carousel-1-left">Z</label>
+          <div>IMG2</div>
+          <label class="nojs-carousel-trigger" for="carousel-3-right">></label>
+        </div>
+        <input type="radio" name="nojs-carousel" id="carousel-3-right" class="nojs-carousel-selector">
+        <input type="radio" name="nojs-carousel" id="carousel-3-left" class="nojs-carousel-selector">
+        <div class="nojs-carousel-container">
+          <label class="nojs-carousel-trigger" for="carousel-2-left">Z</label>
+          <div>IMG3</div>
+          <label class="nojs-carousel-trigger" for="carousel-1-right">></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    end of pages
+  -->
+  <div>
+    <!-- top modal -->
+    <div class="nojs-modal-container">
+      <input type="checkbox" id="top-modal" class="nojs-modal-selector">
+      <label class="nojs-modal-ninja" for="top-modal"></label>
+      <div class="nojs-modal" nojs-side="top">
+        Modal content goes here
+      </div>
+    </div>
+    <!-- right modal -->
+    <div class="nojs-modal-container">
+      <input type="checkbox" id="right-modal" class="nojs-modal-selector">
+      <label class="nojs-modal-ninja" for="right-modal"></label>
+      <div class="nojs-modal" nojs-side="right">
+        Modal content goes here
+      </div>
+    </div>
+    <!-- bottom modal -->
+    <div class="nojs-modal-container">
+      <input type="checkbox" id="bottom-modal" class="nojs-modal-selector">
+      <label class="nojs-modal-ninja" for="bottom-modal"></label>
+      <div class="nojs-modal" nojs-side="bottom">
+        Modal content goes here
+      </div>
+    </div>
+    <!-- left modal -->
+    <div class="nojs-modal-container">
+      <input type="checkbox" id="left-modal" class="nojs-modal-selector">
+      <label class="nojs-modal-ninja" for="left-modal"></label>
+      <div class="nojs-modal" nojs-side="left">
+        Modal content goes here
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

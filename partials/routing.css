@@ -1,0 +1,9 @@
+.nojs-page {
+  display: none;
+  height: calc(100vh - var(--header-height));
+  position: relative;
+}
+
+.nojs-page-selector:checked + .nojs-page {
+  display: block;
+}

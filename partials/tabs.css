@@ -1,0 +1,40 @@
+.nojs-tab-set {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.nojs-tab-trigger {
+  border: 0.2rem solid var(--bodycopy);
+  border-bottom: 0;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  font-weight: bold;
+  order: 1;
+  padding: 0.8rem;
+}
+
+.nojs-tab-trigger ~ .nojs-tab-trigger {
+  border-left: 0;
+}
+
+.nojs-tab {
+  background-color: var(--tertiary);
+  border: 0.2rem solid var(--bodycopy);
+  border-radius: 0.8rem;
+  border-top-left-radius: 0;
+  display: none;
+  flex-basis: 100%;
+  min-height: 4.8rem;
+  order: 2;
+  padding: 0.8rem;
+}
+
+.nojs-tab-selector:checked + .nojs-tab-trigger {
+  background-color: var(--tertiary);
+}
+
+.nojs-tab-selector:checked + .nojs-tab-trigger + .nojs-tab {
+  display: block;
+}
