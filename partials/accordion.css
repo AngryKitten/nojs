@@ -1,0 +1,49 @@
+.nojs-accordion-set {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.nojs-accordion-trigger {
+  border: 0.2rem solid var(--bodycopy);
+  border-bottom: 0;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+
+.nojs-accordion-trigger ~ .nojs-accordion-trigger {
+  border-radius: 0;
+}
+
+.nojs-accordion-selector:last-of-type:not(:checked) + .nojs-accordion-trigger {
+  border-bottom: 0.2rem solid;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.nojs-accordion-selector:checked + .nojs-accordion-trigger {
+  background-color: var(--tertiary);
+  cursor: default;
+}
+
+.nojs-accordion {
+  background-color: var(--tertiary);
+  border: 0.2rem solid var(--bodycopy);
+  border-top: 0.1rem solid;
+  border-bottom: 0;
+  display: none;
+  padding: 0.8rem;
+}
+
+.nojs-accordion-selector:checked + .nojs-accordion-trigger + .nojs-accordion {
+  display: block;
+}
+
+.nojs-accordion-selector:last-of-type:checked ~ .nojs-accordion {
+  border-bottom: 0.2rem solid;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}

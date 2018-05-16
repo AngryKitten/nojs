@@ -45,6 +45,11 @@
   width: 100vw;
 }
 
+.nojs-sidenav[nojs-side=right],
+.nojs-sidenav[nojs-side=left] {
+  top: var(--header-height);
+}
+
 .nojs-sidenav[nojs-side=top] {
   top: calc(0rem - var(--sidenav-height));
 }

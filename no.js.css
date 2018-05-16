@@ -1,8 +1,12 @@
+/* required */
 @import "partials/variables.css";
+/* components */
 @import "partials/routing.css";
 @import "partials/sidenav.css";
 @import "partials/modal.css";
 @import "partials/tabs.css";
+@import "partials/accordion.css";
+
 @import "partials/testing.css";
 
 html {

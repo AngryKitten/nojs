@@ -1,6 +1,18 @@
-#main-sidenav {
-  top: var(--header-height);
+/*
+  reusable
+*/
+
+.clickable {
+  cursor: pointer;
 }
+
+/*
+  sidenav
+*/
+
+/*
+  header
+*/
 
 #header {
   align-items: center;
@@ -49,6 +61,11 @@
   justify-content: center;
   width: 2.4rem;
 }
+
+/*
+  pages
+*/
+
 pre {
   background-color: var(--tertiary);
   margin: 0;
@@ -59,3 +76,7 @@ code {
   font-size: 1.4rem;
   line-height: 2.8rem;
 }
+
+/*
+  modal
+*/
