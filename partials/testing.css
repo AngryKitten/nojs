@@ -12,6 +12,12 @@
   padding: 0 0.8rem;
 }
 
+.nojs-carousel-selector:checked + .nojs-carousel-selector + .nojs-carousel-container {
+  animation-duration: 1s;
+  animation-name: from-right;
+  display: flex;
+}
+
 @keyframes from-right {
   0% {
     left: 100%;
@@ -21,9 +27,9 @@
   }
 }
 
-.nojs-carousel-selector:checked + .nojs-carousel-selector + .nojs-carousel-container {
+.nojs-carousel-selector:checked + .nojs-carousel-container {
   animation-duration: 1s;
-  animation-name: from-right;
+  animation-name: from-left;
   display: flex;
 }
 
@@ -34,10 +40,4 @@
   100% {
     right: 0;
   }
-}
-
-.nojs-carousel-selector:checked + .nojs-carousel-container {
-  animation-duration: 1s;
-  animation-name: from-left;
-  display: flex;
 }

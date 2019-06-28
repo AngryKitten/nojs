@@ -50,6 +50,11 @@
   top: var(--header-height);
 }
 
+.nojs-page .nojs-sidenav[nojs-side=right],
+.nojs-page .nojs-sidenav[nojs-side=left] {
+  top: 0;
+}
+
 .nojs-sidenav[nojs-side=top] {
   top: calc(0rem - var(--sidenav-height));
 }

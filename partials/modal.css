@@ -26,6 +26,12 @@
   z-index: 4;
 }
 
+.nojs-modal-close {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
 .nojs-modal[nojs-side=right] {
   left: auto;
   right: calc(0vw - var(--modal-width));
