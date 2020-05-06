@@ -69,8 +69,18 @@
           <div class="nojs-sidenav" nojs-side="top"></div>
         </div>
       </div>
+      <!-- left sidenav -->
+      <div class="col-2 content-right">
+        <label class="nojs-sidenav-trigger" for="left-sidenav">Left Sidenav</label>
+        <div class="nojs-sidenav-container">
+          <input type="checkbox" id="left-sidenav" class="nojs-sidenav-selector">
+          <label class="nojs-sidenav-ninja" for="left-sidenav"></label>
+          <div class="nojs-sidenav" nojs-side="left"></div>
+        </div>
+      </div>
+      <div class="col-1"></div>
       <!-- right sidenav -->
-      <div class="col-5 content-center">
+      <div class="col-2 content-left">
         <label class="nojs-sidenav-trigger" for="right-sidenav">Right Sidenav</label>
         <div class="nojs-sidenav-container">
           <input type="checkbox" id="right-sidenav" class="nojs-sidenav-selector">
@@ -87,22 +97,15 @@
           <div class="nojs-sidenav" nojs-side="bottom"></div>
         </div>
       </div>
-      <!-- left sidenav -->
-      <div class="col-5 content-center">
-        <label class="nojs-sidenav-trigger" for="left-sidenav">Left Sidenav</label>
-        <div class="nojs-sidenav-container">
-          <input type="checkbox" id="left-sidenav" class="nojs-sidenav-selector">
-          <label class="nojs-sidenav-ninja" for="left-sidenav"></label>
-          <div class="nojs-sidenav" nojs-side="left"></div>
-        </div>
-      </div>
       <div class="col-5 content-center">
         <pre><code>
           &lt;label class="nojs-sidenav-trigger" for="example-sidenav">Sidenav Label&lt;/label>
           &lt;div class="nojs-sidenav-container">
             &lt;input type="checkbox" id="example-sidenav" class="nojs-sidenav-selector">
             &lt;label class="nojs-sidenav-ninja" for="example-sidenav">&lt;/label>
-            &lt;div class="nojs-sidenav" nojs-side="left, right, etc. left by default">&lt;/div>
+            &lt;div class="nojs-sidenav" nojs-side="left, right, etc. left by default">
+              Put your links here.
+            &lt;/div>
           &lt;/div>
         </code></pre>
       </div>
@@ -116,19 +119,35 @@
     <div class="grid">
       <!-- top modal ref -->
       <div class="col-5 content-center">
-        <label class="nojs-modal-trigger" for="top-modal">Top Modal Direction</label>
+        <label class="nojs-modal-trigger" for="top-modal">Top Modal</label>
       </div>
+      <!-- left modal ref -->
+      <div class="col-2 content-right">
+        <label class="nojs-modal-trigger" for="left-modal">Left Modal</label>
+      </div>
+      <div class="col-1"></div>
       <!-- right modal ref -->
-      <div class="col-5 content-center">
-        <label class="nojs-modal-trigger" for="right-modal">Right Modal Direction</label>
+      <div class="col-2 content-left">
+        <label class="nojs-modal-trigger" for="right-modal">Right Modal</label>
       </div>
       <!-- bottom modal ref -->
       <div class="col-5 content-center">
-        <label class="nojs-modal-trigger" for="bottom-modal">Bottom Modal Direction</label>
+        <label class="nojs-modal-trigger" for="bottom-modal">Bottom Modal</label>
       </div>
-      <!-- left modal ref -->
       <div class="col-5 content-center">
-        <label class="nojs-modal-trigger" for="left-modal">Left Modal Direction</label>
+        <pre><code>
+          Trigger code, this can go anywhere on the page:
+          &lt;label class="nojs-modal-trigger" for="example-modal">Modal Label&lt;/label>
+
+          Modal code, this can go anywhere on the page:
+          &lt;div class="nojs-modal-container">
+            &lt;input type="checkbox" id="example-modal" class="nojs-modal-selector">
+            &lt;label class="nojs-modal-ninja" for="example-modal">&lt;/label>
+            &lt;div class="nojs-modal" nojs-side="left, right, etc. top by default">
+              Modal content goes here
+            &lt;/div>
+          &lt;/div>
+        </code></pre>
       </div>
     </div>
   </div>
@@ -138,15 +157,28 @@
   <input type="radio" name="nojs-page" id="tabs-page" class="nojs-page-selector">
   <div class="nojs-page">
     <div class="grid">
-      <div class="col-5 content-center">
+      <div class="col-1"></div>
+      <div class="col-3 content-center">
         <div class="nojs-tab-set">
           <input type="radio" name="nojs-tabs" id="tab-1" class="nojs-tab-selector" checked>
-          <label class="nojs-tab-trigger" for="tab-1">hep</label>
-          <div class="nojs-tab">Tab 1</div>
+          <label class="nojs-tab-trigger" for="tab-1">Tab 1</label>
+          <div class="nojs-tab">Tab 1 Content</div>
           <input type="radio" name="nojs-tabs" id="tab-2" class="nojs-tab-selector">
-          <label class="nojs-tab-trigger" for="tab-2">naw</label>
-          <div class="nojs-tab">Tab 2</div>
+          <label class="nojs-tab-trigger" for="tab-2">Tab 2</label>
+          <div class="nojs-tab">Tab 2 Content</div>
         </div>
+      </div>
+      <div class="col-5 content-center">
+        <pre><code>
+          &lt;div class="nojs-tab-set">
+            &lt;input type="radio" name="nojs-tabs" id="tab-1" class="nojs-tab-selector" checked>
+            &lt;label class="nojs-tab-trigger" for="tab-1">Tab 1&lt;/label>
+            &lt;div class="nojs-tab">Tab 1 Content&lt;/div>
+            &lt;input type="radio" name="nojs-tabs" id="tab-2" class="nojs-tab-selector">
+            &lt;label class="nojs-tab-trigger" for="tab-2">Tab 2&lt;/label>
+            &lt;div class="nojs-tab">Tab 2 Content&lt;/div>
+          &lt;/div>
+        </code></pre>
       </div>
     </div>
   </div>
